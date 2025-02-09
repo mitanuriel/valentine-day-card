@@ -91,6 +91,11 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
+@layer components {
+  .valentine-font {
+    font-family: 'Sacramento', cursive;
+  }
+}
 
 @layer base {
   * {

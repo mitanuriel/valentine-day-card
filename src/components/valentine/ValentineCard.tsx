@@ -27,7 +27,7 @@ export const ValentineCard: React.FC = () => {
         className="w-64 h-64 object-cover rounded-lg"
       />
 
-      <h1 className="text-5xl text-valentine-red text-center font-[Sacramento]">
+      <h1 className="text-5xl text-valentine-red text-center valentine-font">
         Will you be my Valentine?
       </h1>
 
