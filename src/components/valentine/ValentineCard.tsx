@@ -48,14 +48,32 @@ export const ValentineCard: React.FC = () => {
           <Button
             onClick={() => handleAnswer('yes')}
             disabled={answered}
-            className="bg-valentine-red hover:bg-valentine-red/90 text-valentine-white rounded-full px-8 py-4 transform hover:scale-110 transition-all duration-300 hover:animate-heart-beat font-sugar text-xl"
+            className="bg-valentine-red hover:bg-valentine-red/90 text-valentine-white 
+                     px-8 py-4 transform hover:scale-110 transition-all duration-300 
+                     hover:animate-heart-beat font-sugar text-xl
+                     before:content-[''] before:absolute before:w-full before:h-full 
+                     before:bg-valentine-red before:rounded-[100%_100%_0_0] before:top-0 
+                     before:left-0 before:transform before:rotate-[-45deg] before:origin-[100%_100%]
+                     after:content-[''] after:absolute after:w-full after:h-full 
+                     after:bg-valentine-red after:rounded-[100%_100%_0_0] after:top-0 
+                     after:left-0 after:transform after:rotate-[45deg] after:origin-[0%_100%]
+                     relative overflow-hidden"
           >
             Yes 💖
           </Button>
           <Button
             onClick={() => handleAnswer('no')}
             disabled={answered}
-            className="bg-valentine-blue-light hover:bg-valentine-blue-light/90 text-valentine-white rounded-full px-8 py-4 transform hover:scale-110 transition-all duration-300 hover:animate-heart-jump font-sugar text-xl"
+            className="bg-valentine-blue-light hover:bg-valentine-blue-light/90 text-valentine-white 
+                     px-8 py-4 transform hover:scale-110 transition-all duration-300 
+                     hover:animate-heart-jump font-sugar text-xl
+                     before:content-[''] before:absolute before:w-full before:h-full 
+                     before:bg-valentine-blue-light before:rounded-[100%_100%_0_0] before:top-0 
+                     before:left-0 before:transform before:rotate-[-45deg] before:origin-[100%_100%]
+                     after:content-[''] after:absolute after:w-full after:h-full 
+                     after:bg-valentine-blue-light after:rounded-[100%_100%_0_0] after:top-0 
+                     after:left-0 after:transform after:rotate-[45deg] after:origin-[0%_100%]
+                     relative overflow-hidden"
           >
             No 💔
           </Button>
