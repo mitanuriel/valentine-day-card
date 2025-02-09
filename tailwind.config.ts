@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,6 +20,11 @@ export default {
 		},
 		extend: {
 			colors: {
+				'valentine-white': '#FFFFFF',
+				'valentine-yellow': '#FFEA56',
+				'valentine-red': '#C8343B',
+				'valentine-blue-light': '#2ABFFF',
+				'valentine-blue-dark': '#0C1569',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
