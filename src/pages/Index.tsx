@@ -1,15 +1,19 @@
-
 import { ValentineCard } from "@/components/valentine/ValentineCard";
 
 const Index = () => {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#FFDEE2] p-4">
-       <img 
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-pink-50 to-white p-4">
+      <div className="w-full flex flex-col items-center justify-center space-y-6">
+        {/* GIF */}
+        <img 
           src="https://tenor.com/bVkhJ.gif" 
           alt="Valentine GIF" 
-          className="w-64 h-64 object-cover mx-auto mb-4"
+          className="w-64 h-64 object-cover rounded-lg"
         />
-      <ValentineCard />
+
+        {/* Valentine Card */}
+        <ValentineCard />
+      </div>
     </main>
   );
 };
