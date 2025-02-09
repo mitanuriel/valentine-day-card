@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
@@ -18,11 +19,15 @@ export const ValentineCard: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center space-y-8 w-full max-w-2xl mx-auto">
-      <div className="w-64 h-64 bg-gray-100 rounded-lg flex items-center justify-center">
-        <p className="text-gray-500">Cat GIF needed</p>
+      <div className="w-96 h-96 flex items-center justify-center">
+        <img 
+          src="https://tenor.com/bVkhJ.gif" 
+          alt="Cute cat Valentine"
+          className="w-full h-full object-contain"
+        />
       </div>
       
-      <h1 className="text-4xl font-sugar text-valentine-red text-center">
+      <h1 className="text-4xl font-sugar text-valentine-red text-center -mt-4">
         Will you be my Valentine?
       </h1>
 
