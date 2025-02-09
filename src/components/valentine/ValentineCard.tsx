@@ -18,9 +18,7 @@ export const ValentineCard: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center space-y-8 w-full max-w-2xl mx-auto">
-      <div className="w-64 h-64 bg-gray-100 rounded-lg flex items-center justify-center">
-        <p className="text-gray-500">Cat GIF needed</p>
-      </div>
+    
       
       {/* ✅ Remove unwanted placeholder - Only keep this GIF */}
       <img
