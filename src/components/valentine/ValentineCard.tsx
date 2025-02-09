@@ -18,8 +18,9 @@ export const ValentineCard: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-8 w-full max-w-2xl mx-auto">
-      {/* Replacing the "Cat GIF needed" div with the actual GIF */}
+    <div className="flex flex-col items-center justify-center space-y-6 w-full max-w-2xl mx-auto">
+      
+      {/* ✅ Remove unwanted placeholder - Only keep this GIF */}
       <img
         src="https://media.tenor.com/Il6feLFTHyIAAAAj/cat-discord.gif"
         alt="Valentine Cat GIF"
