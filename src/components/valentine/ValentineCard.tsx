@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
@@ -19,12 +20,10 @@ export const ValentineCard: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center space-y-6 w-full max-w-2xl mx-auto">
-      
-      {/* ✅ Remove unwanted placeholder - Only keep this GIF */}
       <img
-        src="https://media.tenor.com/Il6feLFTHyIAAAAj/cat-discord.gif"
+        src="https://tenor.com/bVkhJ.gif"
         alt="Valentine Cat GIF"
-        className="w-64 h-64 object-cover rounded-lg"
+        className="w-64 h-64 object-contain rounded-lg"
       />
 
       <h1 className="text-4xl font-sugar text-valentine-red text-center">
