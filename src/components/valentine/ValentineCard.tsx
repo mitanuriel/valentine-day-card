@@ -1,16 +1,29 @@
-import React from "react";
-import { ValentineHeader } from "./ValentineHeader";
+
+import React, { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { useToast } from "@/components/ui/use-toast";
 
 export const ValentineCard: React.FC = () => {
+  const [answered, setAnswered] = useState(false);
+  const { toast } = useToast();
+
+  const handleAnswer = (answer: 'yes' | 'no') => {
+    setAnswered(true);
+    toast({
+      title: answer === 'yes' ? "Yay! 💖" : "Oh no! 💔",
+      description: answer === 'yes' 
+        ? "Thank you for being my Valentine!" 
+        : "Maybe next time...",
+    });
+  };
+
   return (
-    <article className="bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">
+    <article className="bg-valentine-white rounded-lg shadow-lg p-6 max-w-md mx-auto">
       <div className="space-y-6">
         <div className="space-y-4">
-          <ValentineHeader
-            icon="https://cdn.builder.io/api/v1/image/assets/139103812b5a4a2380993cde243e76c0/399fa2993c34cd114ad48706d77b311d518c37b984add3a6314992862213bb28"
-            title="Valentine Icons set"
-          />
-          <h1 className="text-2xl font-bold text-gray-900">Be My valentine?</h1>
+          <h1 className="text-4xl font-sugar text-valentine-red text-center">
+            Will you be my Valentine?
+          </h1>
         </div>
         
         <div className="space-y-4">
@@ -29,6 +42,23 @@ export const ValentineCard: React.FC = () => {
             className="w-full h-auto object-contain"
             loading="lazy"
           />
+        </div>
+
+        <div className="flex justify-center gap-4">
+          <Button
+            onClick={() => handleAnswer('yes')}
+            disabled={answered}
+            className="bg-valentine-red hover:bg-valentine-red/90 text-valentine-white rounded-full px-8 py-4 transform hover:scale-110 transition-all duration-300 hover:animate-heart-beat font-sugar text-xl"
+          >
+            Yes 💖
+          </Button>
+          <Button
+            onClick={() => handleAnswer('no')}
+            disabled={answered}
+            className="bg-valentine-blue-light hover:bg-valentine-blue-light/90 text-valentine-white rounded-full px-8 py-4 transform hover:scale-110 transition-all duration-300 hover:animate-heart-jump font-sugar text-xl"
+          >
+            No 💔
+          </Button>
         </div>
       </div>
       
