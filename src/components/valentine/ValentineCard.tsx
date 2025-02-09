@@ -22,6 +22,13 @@ export const ValentineCard: React.FC = () => {
         <p className="text-gray-500">Cat GIF needed</p>
       </div>
       
+      {/* ✅ Remove unwanted placeholder - Only keep this GIF */}
+      <img
+        src="https://media.tenor.com/Il6feLFTHyIAAAAj/cat-discord.gif"
+        
+        className="w-64 h-64 object-cover rounded-lg"
+      />
+
       <h1 className="text-4xl font-sugar text-valentine-red text-center">
         Will you be my Valentine?
       </h1>
