@@ -7,7 +7,7 @@ const Index = () => {
         {/* GIF */}
         <img 
           src="https://tenor.com/bVkhJ.gif" 
-          alt="Valentine GIF" 
+      
           className="w-64 h-64 object-cover rounded-lg"
         />
 
